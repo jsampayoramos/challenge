@@ -18,6 +18,7 @@
 .Link {
     color: white;
     margin-bottom: 7px;
+    font-size: 90%;
 }
 
 .Link:link,

@@ -1,5 +1,14 @@
-input {
+.Input {
     width: 100%;
     margin: 5px 0;
     padding: 15px 25px;
+    border: 1px solid lightgrey;
+}
+
+.Input::placeholder {
+    color: #5851EA;
+}
+
+.Input:focus {
+    outline: #5851EA solid 1px;
 }

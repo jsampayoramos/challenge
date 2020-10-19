@@ -4,6 +4,7 @@
     margin-bottom: 2%;
     background-color: white;
     box-shadow: 0px 0px 5px lightgrey;
+    position: relative;
 }
 
 .Card img {
@@ -32,7 +33,20 @@
     color: grey;
 }
 
-hr {
+.Card hr {
     width: 100%;
     border: 1px solid #5851EA;
 }
+
+.IconContainer {
+    display: flex;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+}
+
+.IconContainer * {
+    margin: 5px;
+    color: lightgrey;
+}
+

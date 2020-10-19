@@ -11,7 +11,7 @@ const homepage = props => {
             <section className={styles.Homepage}>
                 <div>
                     <h2>Make Your Team<br />the best it can be</h2>
-                    <Button style={{color: '#5851EA', backgroundColor: 'white', margin: 'auto'}}>Enter</Button>
+                    <Button style={{color: '#5851EA', backgroundColor: 'white', margin: 'auto', boxShadow: 'none'}}>Enter</Button>
                 </div>
             </section>
             <AugmentedSection />            

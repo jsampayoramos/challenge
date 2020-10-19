@@ -9,11 +9,11 @@
     left: 0%;
     height: 75px;
     width: 100%;
-    background-color: #5851EA;
+    z-index: 100;
 }
 
-.Main {
-    padding-top: 75px;
+.HeaderBackground {
+    background-color: #5851EA;
 }
 
 .Footer {

@@ -1,10 +1,16 @@
 import React from 'react';
 
+import SocialIcon from '../About/SocialIcon/SocialIcon';
+
 import styles from './Card.module.css';
 
 const card = props => {
     return (
         <div className={styles.Card}>
+            <div className={styles.IconContainer}>
+                <SocialIcon icon={['fas', 'pen']} />
+                <SocialIcon icon={['fas', 'times']} />
+            </div>
             <div className={styles.CardHeader}>
                 <img src={props.img} alt='Profile' />
                 <div>

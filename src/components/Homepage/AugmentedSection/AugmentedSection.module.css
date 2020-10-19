@@ -37,10 +37,16 @@
     margin-top: 50px;
 }
 
+.Augmented h2 {
+    font-weight: 400;
+}
+
 .Augmented p {
     max-width: 500px;
     text-align: center;
     margin: 25px 0;
+    font-weight: 300;
+    color: grey;
 }
 
 .AugmentedTwo p {
@@ -55,4 +61,8 @@
     margin-top: 25px;
     padding: 0;
     width: 80px;
+}
+
+.Augmented button {
+    font-size: 80%;
 }
