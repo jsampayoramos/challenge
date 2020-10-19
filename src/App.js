@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Switch, Route } from 'react-router-dom';
 
-function App() {
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab, faFacebookF, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faBasketballBall } from '@fortawesome/free-solid-svg-icons'
+
+import Layout from './hoc/Layout';
+import Homepage from './components/Homepage/Homepage';
+import NewEmployee from './containers/NewEmployee/NewEmployee';
+import Team from './containers/Team/Team'
+
+library.add(fab, faFacebookF, faTwitter, faBasketballBall, faLinkedinIn);
+
+const app = props => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Switch>
+        <Route path='/newEmployee' component={NewEmployee} />
+        <Route path='/employees' component={Team} />
+        <Route path='/' exact component={Homepage} />
+      </Switch>      
+    </Layout>
   );
 }
 
-export default App;
+export default app;

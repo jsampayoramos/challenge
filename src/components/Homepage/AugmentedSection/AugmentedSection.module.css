@@ -1,0 +1,58 @@
+.AugmentedOne img {
+    width: 100%;
+    background-color: white;
+}
+
+.Augmented {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    max-width: 1080px;
+    margin: auto;
+}
+
+.Container {
+    display: flex;
+    background-image: url('../../../assets//curve.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px 140px;
+}
+
+.AugmentedOne {
+    width: 60%;
+}
+
+.AugmentedTwo {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Augmented hr {
+    width: 30px;
+    border: 1px solid #5851EA;
+    margin-top: 50px;
+}
+
+.Augmented p {
+    max-width: 500px;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.AugmentedTwo p {
+    text-align: left;
+}
+
+.AugmentedTwo div {
+    max-width: 300px;
+}
+
+.AugmentedTwo hr {
+    margin-top: 25px;
+    padding: 0;
+    width: 80px;
+}

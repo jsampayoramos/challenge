@@ -1,0 +1,45 @@
+.Header, .Footer {
+    display: flex;
+    justify-content: center;
+}
+
+.Header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 75px;
+    width: 100%;
+    background-color: #5851EA;
+}
+
+.Main {
+    padding-top: 75px;
+}
+
+.Footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+    background-color: #5851EA;
+    background-image: url('../assets/curve-1.png');
+    background-position: 0px 75px;
+    background-size: 100% 70%;
+    background-repeat: no-repeat;
+}
+
+.FooterContainer {
+    width: 100%;
+    max-width: 1080px;
+    display: flex;
+}
+.Footer hr {
+    width: 100%;
+    max-width: 1080px;
+    border: 1px solid white;
+    margin-top: 50px;
+}
+
+.Footer > p {
+    color: white;
+    margin: 40px 0px;
+}

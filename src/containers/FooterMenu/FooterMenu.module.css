@@ -1,0 +1,28 @@
+.FooterMenu, .FooterLink {
+    display: flex;
+}
+
+.FooterMenu {
+    width: 70%;
+    justify-content: flex-end;
+}
+
+.FooterLink {
+    flex-direction: column;
+}
+
+.FooterItem {
+    margin-left: 75px;
+}
+
+.Link {
+    color: white;
+    margin-bottom: 7px;
+}
+
+.Link:link,
+.Link:visited,
+.Link:active,
+.Link:hover {
+    text-decoration: none;
+}

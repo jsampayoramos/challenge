@@ -1,0 +1,17 @@
+.Homepage {
+    min-height: 100vh;
+    background-color: #5851EA;
+    background-image: url('../../assets/img-cut-landing.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Homepage div {
+    color: white;    
+}
+
+.Homepage h2 {
+    margin-bottom: 30px;
+}
