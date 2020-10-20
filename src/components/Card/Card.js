@@ -8,8 +8,8 @@ const card = props => {
     return (
         <div className={styles.Card}>
             <div className={styles.IconContainer}>
-                <SocialIcon icon={['fas', 'pen']} />
-                <SocialIcon icon={['fas', 'times']} />
+                <SocialIcon icon={'pen'} color='grey' />
+                <SocialIcon icon={'times'} color='grey' />
             </div>
             <div className={styles.CardHeader}>
                 <img src={props.img} alt='Profile' />
@@ -18,7 +18,9 @@ const card = props => {
                     <p>Employee Id: {props.fields.employeeId.value}</p>
                 </div>
             </div>
-            <hr />
+            <svg>
+                <line x1='0%' y1='0' x2='100%' y2='0' stroke='#5851EA' strokeWidth='2' />
+            </svg>
             <div className={styles.CardBody}>
                 <p>Birthdate: {props.fields.birthdate.value}</p>
                 <p>Address: {props.fields.address.value}</p>

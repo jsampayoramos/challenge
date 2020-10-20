@@ -1,0 +1,14 @@
+.Circunference {
+    position: absolute;
+    z-index: -50;
+}
+
+.Circunference img {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    .Circunference {
+        display: none;
+    }
+}

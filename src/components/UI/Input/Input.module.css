@@ -3,6 +3,13 @@
     margin: 5px 0;
     padding: 15px 25px;
     border: 1px solid lightgrey;
+    color: #5851EA;
+}
+
+.Input::-webkit-outer-spin-button,
+.Input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .Input::placeholder {

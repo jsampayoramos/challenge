@@ -1,0 +1,53 @@
+.DrawerModal {
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+.Drawer {
+    min-width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    display: none;
+    transition: transform 0.3s ease-out;
+}
+
+.DrawerLogo {
+    display: none;
+}
+
+.OpenModal {
+    display: block;
+}
+
+.CloseModal {
+    display: none;
+}
+
+.CloseDrawer {
+    transform: translateX(-100%);
+}
+
+.OpenDrawer {
+    transform: translateX(0);
+}
+
+@media only screen and (max-width: 800px) {
+    .Drawer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100%; 
+    }
+
+    .DrawerLogo {
+        display: block;
+        margin: 10px 0;
+    }
+}

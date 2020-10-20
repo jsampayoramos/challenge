@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Card from '../../components/Card/Card';
+import Square from '../../components/Styling/Square/Square';
 
 import ProfilePicture from '../../assets/avatar.png';
 
@@ -167,12 +168,15 @@ class Team extends Component {
         })
 
         return (
-            <div className={styles.Team}>
+            <section className={styles.Team}>
+                <Square width='40px' height='40px' left='50px' top='165px' />
+                <Square width='40px' height='40px' right='0' top='200px' transform='rotate(220deg)' />
+                <Square width='40px' height='40px' left='75px' bottom='0' fill='rgb(254, 175, 203)' />
                 <h2>Team</h2>
                 <div className={styles.CardsContainer}>
                     {cardsElements}
                 </div>
-            </div>
+            </section>
         );
     };
 };

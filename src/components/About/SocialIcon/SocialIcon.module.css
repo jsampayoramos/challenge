@@ -1,3 +1,9 @@
 .SocialIcon {
     margin-right: 40px;
 }
+
+@media only screen and (max-width: 800px) {
+    .SocialIcon {
+        margin: auto;
+    }
+}

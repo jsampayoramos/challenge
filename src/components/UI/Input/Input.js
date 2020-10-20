@@ -11,7 +11,7 @@ const input = props => {
         //Add other cases if necessary
         default:
             return (
-                <input className={styles.Input} {...props.config} value={props.value} />
+                <input className={styles.Input} {...props.config} value={props.value} onChange={props.action} />
             );
     };
 };

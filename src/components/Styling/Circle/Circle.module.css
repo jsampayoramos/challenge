@@ -1,0 +1,11 @@
+.Circle {
+    border-radius: 50%;
+    background-color: rgb(116, 146, 252);
+    position: absolute;
+}
+
+@media only screen and (max-width: 1400px) {
+    .Circle {
+        display: none;
+    }
+}

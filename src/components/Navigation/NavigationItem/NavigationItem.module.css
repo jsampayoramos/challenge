@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     font-size: 90%;
+    margin: 0px 2px;
 }
 
 .NavigationLink {
@@ -27,4 +28,10 @@
     background-color: white;
     color: #5851EA;
     transition: all 400ms ease-out
+}
+
+@media only screen and (max-width: 800px) {
+    .NavigationItem {
+        margin: 5px 0;
+    }
 }

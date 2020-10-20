@@ -3,7 +3,7 @@
     width: 49%;
     margin-bottom: 2%;
     background-color: white;
-    box-shadow: 0px 0px 5px lightgrey;
+    box-shadow: 0px 0px 4px lightgrey;
     position: relative;
 }
 
@@ -38,6 +38,11 @@
     border: 1px solid #5851EA;
 }
 
+.Card svg {
+    height: 1px;
+    width: 100%;
+}
+
 .IconContainer {
     display: flex;
     position: absolute;
@@ -45,8 +50,46 @@
     right: 15px;
 }
 
-.IconContainer * {
-    margin: 5px;
-    color: lightgrey;
+.IconContainer svg {
+    height: 30px;
+    width: 30px;
 }
 
+.IconContainer * {
+    margin: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+    .Card {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .CardHeader {
+        flex-direction: column;
+        margin: 20px 40px;
+        align-items: center;
+    }
+
+    .Card img {
+        height: 100px;
+        margin-right: 0;
+    }
+
+    .CardHeader {
+        margin: 10px 20px 0 20px;
+    }
+
+    .Card svg {
+        margin: 0;
+    }
+
+    .CardBody {
+        margin: 10px 5px;
+    }
+
+    .IconContainer {
+        flex-direction: column-reverse;
+    }
+}

@@ -27,3 +27,30 @@
 .Link:hover {
     text-decoration: none;
 }
+
+@media only screen and (max-width: 800px) {
+    .FooterItem {
+        margin-left: 0px;
+    }
+
+    .FooterMenu {
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .FooterMenu {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .FooterItem {
+        margin: 15px 15px 0 15px;
+    }
+
+    .FooterItem h3 {
+        margin-bottom: 5;
+    }
+}

@@ -1,7 +1,7 @@
 .Team {
     padding-top: 75px;
     max-width: 1080px;
-    width: 100%;
+    width: 100vw;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -9,12 +9,14 @@
     align-items: center;
     background-image: url('../../assets/curve.png');
     background-size: cover;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
+    position: relative;
 }
 
 .Team h2 {
-    margin: 75px 0;
+    margin: 100px 0;
     color: #5851EA;
+    font-size: 180%;
 }
 
 .CardsContainer {
@@ -22,4 +24,30 @@
     max-width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+@media only screen and (max-width: 1100px) {
+    .Team {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .CardsContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 75%;
+    }
+
+    .Team h2 {
+        margin: 25px 0;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .CardsContainer {
+        width: 90%;
+    }
 }

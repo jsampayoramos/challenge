@@ -3,12 +3,12 @@
     display: flex;
 }
 
-.NavigationBar, .NavigationBar ul {
+.NavigationBar, .NavBarList {
     width: 100%;
     height: 100%;
 }
 
-.NavigationBar ul {
+.NavBarList {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -17,4 +17,15 @@
 
 .NavigationBar img {
     align-self: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .NavBarList {
+        display: none;
+    }
+
+    .NavigationBar {
+        justify-content: space-between;
+        padding: 0 5px;
+    }
 }

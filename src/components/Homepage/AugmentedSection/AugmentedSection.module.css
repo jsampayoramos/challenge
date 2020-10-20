@@ -4,12 +4,18 @@
 }
 
 .Augmented {
+    position: relative;
+    overflow: hidden;
+}
+
+.SectionContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 75px;
     max-width: 1080px;
     margin: auto;
+    position: relative;
 }
 
 .Container {
@@ -39,12 +45,13 @@
 
 .Augmented h2 {
     font-weight: 400;
+    margin-bottom: 20px;
 }
 
 .Augmented p {
     max-width: 500px;
     text-align: center;
-    margin: 25px 0;
+    margin: 20px 0;
     font-weight: 300;
     color: grey;
 }
@@ -65,4 +72,46 @@
 
 .Augmented button {
     font-size: 80%;
+}
+
+.Augmented svg {
+    height: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+    .Container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .AugmentedTwo {
+        width: 100%;
+    }
+
+    .Augmented h2 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .Augmented svg {
+        width: 50px;
+        margin: auto;
+        display: block;
+    }
+
+    .Augmented p {
+        margin: 10px 0;
+    }
+
+    .AugmentedTwo p {
+        text-align: center;
+    }
+
+    .AugmentedTwo button {
+        margin: 0 auto 30px auto;
+    }
+
+    .SectionContainer {
+        padding-top: 25px;
+    }
 }

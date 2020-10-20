@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Input from '../../components/UI/Input/Input';
 import Button from '../../components/UI/Button/Button';
+import Square from '../../components/Styling/Square/Square';
 
 import styles from './NewEmployee.module.css';
 
@@ -109,11 +110,13 @@ class NewEmployee extends Component {
         })
 
         return (
-            <div className={styles.NewEmployee}>
+            <section className={styles.NewEmployee}>
+                <Square width='40px' height='40px' left='50px' top='165px' />
+                <Square width='40px' height='40px' right='0' top='200px' transform='rotate(220deg)' />
                 <h2>New Employee</h2>
                 <form onSubmit={this.submitForm}>
                     {formElements}
-                    <div>
+                    <div className={styles.DualInputContainer}>
                         <div className={styles.InputContainer}>
                             <Input
                                 key='created'
@@ -139,7 +142,7 @@ class NewEmployee extends Component {
                         Submit
                     </Button>
                 </form>
-            </div>
+            </section>
         );
     };
 };

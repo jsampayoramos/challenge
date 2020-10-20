@@ -9,11 +9,13 @@
     align-items: center;
     background-image: url('../../assets/curve.png');
     background-size: cover;
+    position: relative;
 }
 
 .NewEmployee h2 {
-    margin: 75px 0;
+    margin: 100px 0;
     color: #5851EA;
+    font-size: 180%;
 }
 
 .NewEmployee form {
@@ -32,4 +34,22 @@ form div {
 
 .InputContainer {
     width: 47%;
+}
+
+@media only screen and (max-width: 600px) {
+    .NewEmployee form {
+        padding: 0 25px;
+    }
+
+    .InputContainer {
+        width: 100%;
+    }
+
+    .DualInputContainer {
+        flex-direction: column;
+    }
+
+    .NewEmployee h2 {
+        margin: 25px 0;
+    }
 }

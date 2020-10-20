@@ -10,7 +10,7 @@ class About extends Component {
         facebook: ['fab', 'facebook-f'],
         twitter: ['fab', 'twitter'],
         basketball: ['fas', 'basketball-ball'],
-        linkedin: ['fab', 'linkedin-in']
+        linkedin: ['fab', 'linkedin-in'],
     }
 
     render () {
@@ -24,7 +24,7 @@ class About extends Component {
         };
 
         const iconElements = iconArray.map(iconEl => {
-            return <SocialIcon icon={iconEl.icons} key={iconEl.id}/>
+            return <SocialIcon icon={iconEl.icons} key={iconEl.id} color='white'/>
         });
 
         return (
