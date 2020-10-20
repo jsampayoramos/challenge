@@ -1,7 +1,7 @@
 .Homepage {
     min-height: 100vh;
     background-color: #5851EA;
-    background-image: url('../../assets/img-cut-landing.png');
+    background-image: url('../../../assets/img-cut-landing.png');
     background-size: cover;
     display: flex;
     justify-content: center;

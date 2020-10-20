@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Button from '../../UI/Button/Button';
-import Circunference from '../../Styling/Circunference/Circunference';
+import Button from '../../../components/UI/Button/Button';
+import Circunference from '../../../components/Styling/Circunference/Circunference';
 
 import AugmentedImage from '../../../assets/img-landing.png';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SocialIcon from '../About/SocialIcon/SocialIcon';
+import SocialIcon from '../UI/SocialIcon/SocialIcon';
 
 import styles from './Card.module.css';
 

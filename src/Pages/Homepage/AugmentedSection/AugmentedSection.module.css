@@ -20,7 +20,7 @@
 
 .Container {
     display: flex;
-    background-image: url('../../../assets//curve.png');
+    background-image: url('../../../assets/curve.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0px 140px;
